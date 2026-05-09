@@ -1,0 +1,61 @@
+# ─────────────────────────────────────────────
+# AgenTrading — .gitignore
+# ─────────────────────────────────────────────
+
+# !! JANGAN pernah commit .env — berisi API key !!
+.env
+
+# Go build artifacts
+backend/agentrading
+backend/*.exe
+backend/main
+backend/tmp/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Playwright browsers (besar, di-install ulang saat setup)
+scraper/playwright-browsers/
+
+# Node / npm (jika ada)
+node_modules/
+npm-debug.log*
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+backend/logs/
+
+# Database dumps
+*.sql
+*.dump
+*.bak
+
+# Streamlit cache
+.streamlit/
+frontend_streamlit/.streamlit/
+
+# Google Cloud credential file (jangan dicommit)
+agentrading.json
+
+# Test / debug files
+scraper/debug_*.py
+scraper/test_*.py
+*.test.go
